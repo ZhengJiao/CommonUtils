@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">myutils</string>
+
+    <string name="confirm">确定</string>
+
+    <string name="dialog_account_title">无法访问</string>
+    <string name="dialog_account_msg">您现在是IB管理账户，无法访问该页面，如需访问请切换至交易账户</string>
+    <string name="switch_account">切换账户</string>
+
+</resources>
