@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--我的模块贝塞尔区线数据图-->
+    <declare-styleable name="VFXBesselChart">
+        <!--左上角标题文本颜色-->
+        <attr name="text_title_color" format="color" />
+        <!--x轴底部文本颜色-->
+        <attr name="text_x_color" format="color" />
+        <!--x轴刻度颜色-->
+        <attr name="scale_x_color" format="color" />
+        <!--y轴左边文本颜色-->
+        <attr name="text_y_color" format="color" />
+        <!--贝塞尔数据线颜色-->
+        <attr name="line_bessel_color" format="color" />
+        <!--手势点击后数据标注线颜色-->
+        <attr name="line_click_color" format="color" />
+        <!--虚线颜色-->
+        <attr name="line_imaginary_color" format="color" />
+        <!--x轴刻度线宽度-->
+        <attr name="scale_x_width" format="integer" />
+        <!--虚线宽度-->
+        <attr name="line_imaginary_width" format="dimension" />
+        <!--贝塞尔数据线宽度-->
+        <attr name="line_bessel_widht" format="integer" />
+        <!--手势点击后数据标注线宽度-->
+        <attr name="line_click_widht" format="dimension" />
+        <!--数据区域距离顶部距离-->
+        <attr name="data_margin_top" format="dimension" />
+        <!--y轴左边文本距离-->
+        <attr name="width_y_scale_data" format="integer" />
+        <!--x轴下边文本距离底部的高度-->
+        <attr name="height_x_scale_data" format="integer" />
+        <!--数据区域距离右边的距离-->
+        <attr name="width_data_margin_right" format="integer" />
+        <!--数据区域内部padding距离-->
+        <attr name="padding_data_top" format="integer" />
+        <attr name="padding_data_bottom" format="integer" />
+        <attr name="padding_data_left" format="integer" />
+        <attr name="padding_data_right" format="integer" />
+    </declare-styleable>
+
+    <!--财经日历详情折线图-->
+    <declare-styleable name="VFXLineChart">
+        <!--线的颜色-->
+        <attr name="line_straight_color" format="color" />
+        <!--线左边数据文本颜色-->
+        <attr name="text_data_color" format="color" />
+        <!--线左边数据大小-->
+        <attr name="text_data_size" format="dimension" />
+        <!--底部日期颜色-->
+        <attr name="text_date_color" format="color" />
+        <!--底部日期大小-->
+        <attr name="text_date_size" format="dimension" />
+        <!--数据线颜色-->
+        <attr name="line_broken_color" format="color" />
+        <!--数据线宽度-->
+        <attr name="line_broken_width" format="dimension" />
+    </declare-styleable>
+
+    <!--订单图表-->
+    <declare-styleable name="VFXOrderChart">
+        <!-- 卖线颜色 -->
+        <attr name="bid_color" format="color" />
+        <!-- 买线颜色 -->
+        <attr name="ask_color" format="color" />
+        <!-- 虚线颜色 -->
+        <attr name="line_virtual_color" format="color" />
+        <!-- 现价文本颜色 -->
+        <attr name="text_current_price_color" format="color" />
+        <!-- 显示多少个价格点 -->
+        <attr name="price_point_nums" format="integer" />
+        <!-- Y轴刻度价格颜色 -->
+        <attr name="text_scale_color" format="color" />
+        <!-- Y轴刻度文本宽度 yScaleDataWidth -->
+        <attr name="scale_width_y" format="dimension" />
+        <!-- padding -->
+        <attr name="oc_padding_top" format="dimension" />
+        <attr name="oc_padding_right" format="dimension" />
+        <attr name="oc_padding_bottom" format="dimension" />
+        <attr name="oc_padding_left" format="dimension" />
+        <!-- 文字大小 -->
+        <attr name="oc_text_size" format="integer" />
+    </declare-styleable>
+
+</resources>

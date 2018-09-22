@@ -1,4 +1,4 @@
-package com.example.myutils;
+package com.example.myutils.view;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -8,6 +8,8 @@ import android.view.Display;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.TextView;
+
+import com.example.myutils.R;
 
 /**
  * Created by zheng on 2018/9/22 0022.
@@ -32,7 +34,7 @@ public class SwitchAccountDialog extends Dialog {
         WindowManager windowManager = getWindow().getWindowManager();
         Display display = windowManager.getDefaultDisplay();
         WindowManager.LayoutParams lp = getWindow().getAttributes();
-        lp.width = (int) (display.getWidth() * 0.7);
+        lp.width = (int) (display.getWidth() * 0.8);
         getWindow().setAttributes(lp);
 
         setCanceledOnTouchOutside(false);

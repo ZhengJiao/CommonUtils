@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.commonutils.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="#000">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#aaff0000"/>
+
+        <TextView
+            android:textColor="#ff0000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/title_padding"
+            android:textSize="@dimen/title_size"
+            android:textStyle="bold"
+            android:text="ChartList"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#aaff0000"/>
+
+        <TextView
+            android:id="@+id/tv_vfx_bessel"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:textSize="@dimen/msg_size"
+            android:textStyle="bold"
+            android:text="VFXBesselChart -- 我的模块 贝塞尔区线数据图"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#aaff0000"/>
+
+        <TextView
+            android:id="@+id/tv_vfx_line"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:textSize="@dimen/msg_size"
+            android:textStyle="bold"
+            android:text="VFXLineChart -- 财经日历详情 折线图"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#aaff0000"/>
+
+        <TextView
+            android:id="@+id/tv_vfx_order"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:textSize="@dimen/msg_size"
+            android:textStyle="bold"
+            android:text="VFXOrderChart -- 订单买卖价格 折线图"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#aaff0000"/>
+
+    </LinearLayout>
+
+</ScrollView>

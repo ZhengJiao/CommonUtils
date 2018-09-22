@@ -16,6 +16,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!-- 弹窗 -->
+        <activity android:name=".activity.DialogActivity" />
+        <!-- 图表 -->
+        <activity android:name=".activity.ChartActivity" />
+        <!-- 工具类 -->
+        <activity android:name=".activity.UtilsActivity" />
+
+        <!-- 展示 -->
+        <activity android:name=".activity.ShowActivity"/>
     </application>
 
 </manifest>

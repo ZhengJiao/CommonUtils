@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.example.myutils.view.custom.VFXBesselChart
+        android:id="@+id/bessel_chart"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="#ffffff"
+        android:layerType="software"
+        android:visibility="gone" />
+
+    <com.example.myutils.view.custom.VFXLineChart
+        android:id="@+id/line_chart"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#e8e8e8"
+        android:visibility="gone" />
+
+    <com.example.myutils.view.custom.VFXOrderChart
+        android:id="@+id/order_chart"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layerType="software"
+        android:visibility="gone"
+        app:ask_color="#3cc28a"
+        app:bid_color="#f06256"
+        app:line_virtual_color="#809b9b9b"
+        app:oc_padding_left="16dp"
+        app:oc_padding_right="12dp"
+        app:text_current_price_color="@color/white"
+        app:text_scale_color="#262626" />
+
+</LinearLayout>
