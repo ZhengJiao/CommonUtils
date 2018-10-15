@@ -14,10 +14,10 @@ import java.io.IOException;
 
 /**
  * Created by ALANZHEN on 2018/7/9.
+ * bitmap
  */
 
 public class BitmapUtil {
-
 
     /**
      * 将bitmap保存本地图库
@@ -52,7 +52,6 @@ public class BitmapUtil {
         // 最后通知图库更新
         context.sendBroadcast(new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE, Uri.parse("file://" + file.getAbsolutePath())));
     }
-
 
     //////////////////////////////////////////////////////////////////
     public static String getRootFilePath() {

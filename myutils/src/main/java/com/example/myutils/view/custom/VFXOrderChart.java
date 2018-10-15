@@ -13,7 +13,7 @@ import android.util.AttributeSet;
 import android.view.View;
 
 import com.example.myutils.R;
-import com.example.myutils.utils.DataUtils;
+import com.example.myutils.utils.DataUtil;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -301,7 +301,7 @@ public class VFXOrderChart extends View {
         yScaleStrList.add(String.valueOf(minPrice));
         float scalePrice = (maxPrice - minPrice) / 5;
         for (int x = 1; x < 5; x++) {
-            yScaleStrList.add(DataUtils.format(minPrice + scalePrice * x, digits, false));
+            yScaleStrList.add(DataUtil.format(minPrice + scalePrice * x, digits, false));
         }
         yScaleStrList.add(String.valueOf(maxPrice));
         Collections.reverse(yScaleStrList);

@@ -2031,8 +2031,8 @@ public class TabLayout extends HorizontalScrollView {
 //                        mIndicatorLeft + paddingLeft + mTabLineOffset, getHeight());
 //                canvas.drawRoundRect(
 //                        oval3,
-//                        ScreenUtils.dip2px(MyApplication.getContext(), 3),
-//                        ScreenUtils.dip2px(MyApplication.getContext(), 3),
+//                        ScreenUtil.dip2px(MyApplication.getContext(), 3),
+//                        ScreenUtil.dip2px(MyApplication.getContext(), 3),
 //                        mSelectedIndicatorPaint
 //                );
 //            }

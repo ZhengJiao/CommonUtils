@@ -27,17 +27,14 @@ import java.lang.reflect.Field;
  *
  * @author zhengjiao
  */
-public class ScreenUtils {
+public class ScreenUtil {
 
-    private ScreenUtils() {
+    private ScreenUtil() {
         throw new UnsupportedOperationException("cannot be instantiated");
     }
 
     /**
      * 获得屏幕宽度
-     *
-     * @param context
-     * @return
      */
     public static int getScreenWidth(Context context) {
         WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
@@ -48,9 +45,6 @@ public class ScreenUtils {
 
     /**
      * 获得屏幕高度
-     *
-     * @param context
-     * @return
      */
     public static int getScreenHeight(Context context) {
         WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
@@ -61,9 +55,6 @@ public class ScreenUtils {
 
     /**
      * 获得状态栏的高度
-     *
-     * @param context
-     * @return
      */
     public static int getStatusHeight(Context context) {
         int statusHeight = -1;
@@ -80,9 +71,6 @@ public class ScreenUtils {
 
     /**
      * 打开软键盘
-     *
-     * @param mEditText
-     * @param mContext
      */
     public static void openKeybord(EditText mEditText, Context mContext) {
         InputMethodManager imm = (InputMethodManager) mContext
@@ -178,4 +166,5 @@ public class ScreenUtils {
 
         }
     }
+
 }

@@ -8,7 +8,7 @@ import android.util.Log;
  * 日志
  */
 
-public class LogUtils {
+public class LogUtil {
 
     static final String TAG = "TAG";
 

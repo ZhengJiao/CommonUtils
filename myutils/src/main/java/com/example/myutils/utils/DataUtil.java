@@ -9,7 +9,7 @@ import java.text.DecimalFormat;
  * format(double in, int keepNum, boolean isRound) 保留几位小数，是否四舍五入
  */
 
-public class DataUtils {
+public class DataUtil {
 
     public static String format(double in, int keepNum, boolean isRound) {
         DecimalFormat format = new DecimalFormat();
