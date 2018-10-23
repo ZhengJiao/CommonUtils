@@ -88,6 +88,7 @@ public class VFXLineChart extends View {
         textDateSize = typedArray.getDimension(R.styleable.VFXLineChart_text_date_size, 38);
         lineBrokenColor = typedArray.getColor(R.styleable.VFXLineChart_line_broken_color, getResources().getColor(R.color.yellow_c9a13b));
         lineBrokenWidth = typedArray.getDimension(R.styleable.VFXLineChart_line_broken_width, 4);
+        typedArray.recycle();
     }
 
     @Override

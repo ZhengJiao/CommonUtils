@@ -87,6 +87,7 @@ public class VFXOrderChart extends View {
         dataPaddingRight = typedArray.getDimension(R.styleable.VFXOrderChart_oc_padding_right, 30);
         dataPaddingBottom = typedArray.getDimension(R.styleable.VFXOrderChart_oc_padding_bottom, 50);
         textSize = typedArray.getInteger(R.styleable.VFXOrderChart_oc_text_size, 35);
+        typedArray.recycle();
     }
 
     private void initPaint() {

@@ -150,6 +150,7 @@ public class VFXBesselChart extends View {
         dataPaddingRight = typedArray.getInteger(R.styleable.VFXBesselChart_padding_data_right, 10);
         dataPaddingTop = typedArray.getInteger(R.styleable.VFXBesselChart_padding_data_top, 10);
         dataPaddingBottom = typedArray.getInteger(R.styleable.VFXBesselChart_padding_data_bottom, 20);
+        typedArray.recycle();
     }
 
     @Override
