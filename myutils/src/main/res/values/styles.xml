@@ -3,6 +3,8 @@
 
     <!--我的模块贝塞尔区线数据图-->
     <declare-styleable name="VFXBesselChart">
+        <!--数据区域颜色-->
+        <attr name="data_range_color" format="color" />
         <!--左上角标题文本颜色-->
         <attr name="text_title_color" format="color" />
         <!--x轴底部文本颜色-->

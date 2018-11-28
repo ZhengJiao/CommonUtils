@@ -62,8 +62,8 @@ public class VFXBesselChart extends View {
     private List<Point> pointList;
     private List<Point> pointSilentList;
 
-    // 左上角标题文本颜色
-    private int textTitleColor;
+    // 左上角标题文本颜色 数据区域颜色
+    private int textTitleColor,dataRangeColor;
     // x轴底部文本颜色
     private int textXColor;
     // x轴刻度颜色
@@ -131,6 +131,7 @@ public class VFXBesselChart extends View {
     private void initXmlAttrs(Context context, int attrs) {
         TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.VFXBesselChart);
         if (typedArray == null) return;
+        dataRangeColor = typedArray.getColor(R.styleable.VFXBesselChart_data_range_color, getResources().getColor(R.color.gray_f8f8f8));
         textTitleColor = typedArray.getColor(R.styleable.VFXBesselChart_text_title_color, getResources().getColor(R.color.black));
         textXColor = typedArray.getColor(R.styleable.VFXBesselChart_text_x_color, getResources().getColor(R.color.black));
         scaleXColor = typedArray.getColor(R.styleable.VFXBesselChart_scale_x_color, getResources().getColor(R.color.gray_d5d5d5));
@@ -397,7 +398,7 @@ public class VFXBesselChart extends View {
 
     // 数据区域  (灰色矩形)
     private void drawDataRect(Canvas canvas) {
-        mPaint.setColor(Color.parseColor("#f8f8f8"));
+        mPaint.setColor(dataRangeColor);
         dataRect = new Rect(
                 yScaleDataWidth, (int) dataMarginTop,
                 getWidth() - dataMarginRightWidth, getHeight() - xScaleDataHeight
