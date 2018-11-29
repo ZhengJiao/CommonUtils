@@ -6,12 +6,18 @@
     android:orientation="vertical">
 
     <com.example.myutils.view.custom.VFXBesselChart
+        app:text_x_color="@color/white"
+        app:text_y_color="@color/white"
+        app:text_title_color="@color/white"
+        app:scale_x_color="#ff0000"
+        app:line_bessel_color="#ff0000"
+        app:data_range_color="#151D26"
         android:id="@+id/bessel_chart"
         android:layout_width="match_parent"
         android:layout_height="240dp"
-        android:background="#ffffff"
+        android:background="#151D26"
         android:layerType="software"
-        android:visibility="gone" />
+        app:line_click_color="#6988AF"/>
 
     <com.example.myutils.view.custom.VFXLineChart
         android:id="@+id/line_chart"

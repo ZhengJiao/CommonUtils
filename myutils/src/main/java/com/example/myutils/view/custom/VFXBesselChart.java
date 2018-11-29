@@ -118,7 +118,7 @@ public class VFXBesselChart extends View {
 
     public VFXBesselChart(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        initXmlAttrs(context, defStyleAttr);
+        initXmlAttrs(context, attrs);
         initPaint();
     }
 
@@ -128,7 +128,7 @@ public class VFXBesselChart extends View {
         mPaint.setStrokeWidth(2);
     }
 
-    private void initXmlAttrs(Context context, int attrs) {
+    private void initXmlAttrs(Context context, AttributeSet attrs) {
         TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.VFXBesselChart);
         if (typedArray == null) return;
         dataRangeColor = typedArray.getColor(R.styleable.VFXBesselChart_data_range_color, getResources().getColor(R.color.gray_f8f8f8));
