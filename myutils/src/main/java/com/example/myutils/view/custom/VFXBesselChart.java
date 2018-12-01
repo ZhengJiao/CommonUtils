@@ -530,7 +530,7 @@ public class VFXBesselChart extends View {
         yScaleStrList.clear();
 
         String fnumStr = "##0.00";
-        //成交量 用户量 不能有小数
+        // 成交量 用户量 不能有小数
         if (sortIndex == 3 || sortIndex == 4) fnumStr = "##0";
 
         yScaleStrList.add(

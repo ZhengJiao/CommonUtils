@@ -1,5 +1,8 @@
 package com.example.myutils.utils;
 
+import android.text.TextUtils;
+import android.util.Log;
+
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
 
@@ -10,6 +13,16 @@ import java.text.DecimalFormat;
  */
 
 public class DataUtil {
+
+    /**
+     * 数字格式化
+     * in      需要格式化的内容
+     * keepNum 保留位数,默认保留两位小数
+     * isRound 是否开启四舍五入
+     */
+    public static String format(double in, boolean isRound) {
+        return format(in, 2, isRound);
+    }
 
     public static String format(double in, int keepNum, boolean isRound) {
         DecimalFormat format = new DecimalFormat();
@@ -30,6 +43,10 @@ public class DataUtil {
         return result;
     }
 
+    public static String format(String in, boolean isRound) {
+        return format(in, 2, isRound);
+    }
+
     public static String format(String in, int keepNum, boolean isRound) {
         String var3 = "";
 
@@ -42,6 +59,30 @@ public class DataUtil {
         }
 
         return format(indouble, keepNum, isRound);
+    }
+
+    public static float parseString2Float(String value) {
+        if (value == null || TextUtils.isEmpty(value) || "null".equalsIgnoreCase(value)) {
+            return 0;
+        }
+        try {
+            return Float.parseFloat(value);
+        } catch (NumberFormatException e) {
+            Log.e("parseString2Float", "parseString2Float error:" + e.getMessage());
+            return 0;
+        }
+    }
+
+    public static double parseString2Double(String value) {
+        if (value == null || TextUtils.isEmpty(value) || "null".equalsIgnoreCase(value)) {
+            return 0;
+        }
+        try {
+            return Double.parseDouble(value);
+        } catch (NumberFormatException e) {
+            Log.e("parseString2Float", "parseString2Float error:" + e.getMessage());
+            return 0;
+        }
     }
 
 }
