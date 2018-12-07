@@ -7,12 +7,13 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.administrator.commonutils.activity.ChartActivity;
+import com.example.administrator.commonutils.activity.CustomViewActivity;
 import com.example.administrator.commonutils.activity.DialogActivity;
 import com.example.administrator.commonutils.activity.UtilsActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private TextView tvDialog, tvChart, tvUtils;
+    private TextView tvDialog, tvChart, tvUtils, tvCustomView;
     private MainModel model;
 
     @Override
@@ -34,12 +35,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tvDialog = findViewById(R.id.tv_dialog);
         tvChart = findViewById(R.id.tv_chart);
         tvUtils = findViewById(R.id.tv_utils);
+        tvCustomView = findViewById(R.id.tv_custom_view);
     }
 
     private void initListener() {
         tvDialog.setOnClickListener(this);
         tvChart.setOnClickListener(this);
         tvUtils.setOnClickListener(this);
+        tvCustomView.setOnClickListener(this);
     }
 
     @Override
@@ -53,6 +56,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.tv_utils: // 工具类
                 startActivity(new Intent(MainActivity.this, UtilsActivity.class));
+                break;
+            case R.id.tv_custom_view: // 自定义view
+                startActivity(new Intent(MainActivity.this, CustomViewActivity.class));
                 break;
         }
     }

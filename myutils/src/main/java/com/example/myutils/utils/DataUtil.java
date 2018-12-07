@@ -10,6 +10,7 @@ import java.text.DecimalFormat;
  * Created by zheng on 2018/9/22 0022.
  * 数据格式化工具栏
  * format(double in, int keepNum, boolean isRound) 保留几位小数，是否四舍五入
+ * parseString2Float / parseString2Double / parseString2Int 字符串转数据
  */
 
 public class DataUtil {
@@ -21,6 +22,10 @@ public class DataUtil {
      * isRound 是否开启四舍五入
      */
     public static String format(double in, boolean isRound) {
+        return format(in, 2, isRound);
+    }
+
+    public static String format(String in, boolean isRound) {
         return format(in, 2, isRound);
     }
 
@@ -41,10 +46,6 @@ public class DataUtil {
 
         String result = format.format(in);
         return result;
-    }
-
-    public static String format(String in, boolean isRound) {
-        return format(in, 2, isRound);
     }
 
     public static String format(String in, int keepNum, boolean isRound) {
@@ -69,6 +70,18 @@ public class DataUtil {
             return Float.parseFloat(value);
         } catch (NumberFormatException e) {
             Log.e("parseString2Float", "parseString2Float error:" + e.getMessage());
+            return 0;
+        }
+    }
+
+    public static int parseString2Int(String value) {
+        if (value == null || TextUtils.isEmpty(value) || "null".equalsIgnoreCase(value)) {
+            return 0;
+        }
+        try {
+            return Integer.parseInt(value);
+        } catch (NumberFormatException e) {
+            Log.e("parseString2Int", "parseString2Int error:" + e.getMessage());
             return 0;
         }
     }

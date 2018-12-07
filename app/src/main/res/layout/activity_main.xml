@@ -76,6 +76,21 @@
           android:layout_height="0.5dp"
           android:background="#aaff0000"/>
 
+      <TextView
+          android:id="@+id/tv_custom_view"
+          android:gravity="center"
+          android:textColor="#fff"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/item_height"
+          android:textSize="@dimen/msg_size"
+          android:textStyle="bold"
+          android:text="自定义View"/>
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="0.5dp"
+          android:background="#aaff0000"/>
+
   </LinearLayout>
 
 </ScrollView>

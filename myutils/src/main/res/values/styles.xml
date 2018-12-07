@@ -85,6 +85,17 @@
         <attr name="oc_text_size" format="integer" />
     </declare-styleable>
 
+    <!-- 可设置宽高比例的ImageView -->
+    <declare-styleable name="ScaleImageView">
+        <!-- 比例模式，默认0以宽度为主，其他值以高为主 -->
+        <attr name="siv_scale_mode">
+            <enum name="fixed_width" value="0" />
+            <enum name="fixed_height" value="1" />
+        </attr>
+        <!--宽高比例，以：隔开-->
+        <attr name="siv_scale" format="string" />
+    </declare-styleable>
+
     <declare-styleable name="TabLayout">
         <attr name="tabLineOffset" format="dimension"/>
     </declare-styleable>

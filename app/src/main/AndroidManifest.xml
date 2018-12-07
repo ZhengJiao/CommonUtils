@@ -24,7 +24,8 @@
         <activity android:name=".activity.UtilsActivity" />
 
         <!-- 展示 -->
-        <activity android:name=".activity.ShowActivity"/>
+        <activity android:name=".activity.ShowActivity" />
+        <activity android:name=".activity.CustomViewActivity"></activity>
     </application>
 
 </manifest>
