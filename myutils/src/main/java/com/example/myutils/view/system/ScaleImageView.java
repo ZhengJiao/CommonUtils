@@ -11,17 +11,17 @@ import com.example.myutils.utils.DataUtil;
 
 /**
  * Created by zheng on 2018/12/6 0006.
- *
+ * <p>
  * 可设置宽高比例的ImageView
  * app:siv_scale_mode="fixed_width"  设置比例模式：以宽为主/以高为主 （默认以宽为主）
- * app:siv_scale="9:6"  设置宽高比例
+ * app:siv_scale="1:1"  设置宽高比例
  */
 public class ScaleImageView extends android.support.v7.widget.AppCompatImageView {
 
     // 0:以宽为主  其他以高为主
     private int scaleMode;
     // 宽高比例 以：隔开
-    private String whScale = "9:6";
+    private String whScale = "1:1";
 
     public ScaleImageView(Context context) {
         this(context, null);
@@ -52,13 +52,17 @@ public class ScaleImageView extends android.support.v7.widget.AppCompatImageView
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
 
-        int scaleWidht = 9;
-        int scaleHeight = 6;
+        int scaleWidht = 1;
+        int scaleHeight = 1;
+
         if (!TextUtils.isEmpty(whScale) && whScale.contains(":")) {
             String[] tempArray = whScale.split(":");
             scaleWidht = DataUtil.parseString2Int(tempArray[0]);
             scaleHeight = DataUtil.parseString2Int(tempArray[1]);
         }
+
+        if (scaleWidht == 0) scaleWidht = 1;
+        if (scaleHeight == 0) scaleHeight = 1;
 
         int widthSize, heightSize;
 
