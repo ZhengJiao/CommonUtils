@@ -281,7 +281,7 @@ public class VFXOrderChart extends View {
 
     public void setData(float bidPrice, float askPrice) {
 
-        if (bidPrice == lastBid && askPrice == lastAsk) return;
+        // if (bidPrice == lastBid && askPrice == lastAsk) return;
 
         bidList.add(bidPrice);
         askList.add(askPrice);
