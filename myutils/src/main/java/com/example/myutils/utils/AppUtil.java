@@ -27,8 +27,8 @@ public class AppUtil {
 
     /**
      * 获取包名
-     * @param context
-     * @return
+     * @param context a
+     * @return a
      */
     public static String getPackageName(Context context){
         return context.getPackageName();
@@ -36,7 +36,7 @@ public class AppUtil {
 
     /**
      * 获取VersionName(版本名称)
-     * @param context
+     * @param context a
      * @return
      * 失败时返回""
      */
@@ -53,7 +53,7 @@ public class AppUtil {
 
     /**
      * 获取VersionCode(版本号)
-     * @param context
+     * @param context a
      * @return
      * 失败时返回-1
      */
@@ -70,8 +70,8 @@ public class AppUtil {
 
     /**
      * 获取所有安装的应用程序,不包含系统应用
-     * @param context
-     * @return
+     * @param context a
+     * @return a
      */
     public static List<PackageInfo> getInstalledPackages(Context context){
         PackageManager packageManager = getPackageManager(context);
@@ -87,7 +87,7 @@ public class AppUtil {
 
     /**
      * 获取应用程序的icon图标
-     * @param context
+     * @param context a
      * @return
      * 当包名错误时，返回null
      */
@@ -104,7 +104,7 @@ public class AppUtil {
 
     /**
      * 启动安装应用程序
-     * @param activity
+     * @param activity a
      * @param path  应用程序路径
      */
     public static void installApk(Activity activity, String path){
@@ -116,47 +116,12 @@ public class AppUtil {
 
     /**
      * 获取PackageManager对象
-     * @param context
-     * @return
+     * @param context a
+     * @return a
      */
     private static PackageManager getPackageManager(Context context){
         return context.getPackageManager();
     }
 
-    /**
-     * 获取当前手机系统版本号
-     *
-     * @return  系统版本号
-     */
-    public static String getSystemVersion() {
-        return android.os.Build.VERSION.RELEASE;
-    }
-
-    /**
-     * 获取手机型号
-     *
-     * @return  手机型号
-     */
-    public static String getSystemModel() {
-        return android.os.Build.MODEL;
-    }
-
-    /**
-     * 获取手机厂商
-     *
-     * @return  手机厂商
-     */
-    public static String getDeviceBrand() {
-        return android.os.Build.BRAND;
-    }
-
-    /**
-     * 获取当前手机系统语言。
-     *
-     * @return 返回当前系统语言。例如：当前设置的是“中文-中国”，则返回“zh-CN”
-     */
-    public static String getSystemLanguage() {
-        return Locale.getDefault().getLanguage();
-    }
 
 }
