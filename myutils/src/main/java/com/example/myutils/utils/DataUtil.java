@@ -7,7 +7,7 @@ import java.math.RoundingMode;
 import java.text.DecimalFormat;
 
 /**
- * Created by zheng on 2018/9/22 0022.
+ * Created by roy on 2018/9/22 0022.
  * 数据格式化工具栏
  * format(double in, int keepNum, boolean isRound) 保留几位小数，是否四舍五入
  * parseString2Float / parseString2Double / parseString2Int 字符串转数据

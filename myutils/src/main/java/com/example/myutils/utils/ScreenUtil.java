@@ -12,7 +12,7 @@ import android.widget.EditText;
 import java.lang.reflect.Field;
 
 /**
- * Created by a on 2014/5/18.
+ * Created by roy on 2014/5/18.
  * <p>
  * 和屏幕相关的辅助工具类
  * <p>
@@ -25,7 +25,6 @@ import java.lang.reflect.Field;
  * <p>
  * setAlpha(Activity context, float bgAlpha) 设置当前activity的背景透明度
  *
- * @author zhengjiao
  */
 public class ScreenUtil {
 
@@ -39,7 +38,7 @@ public class ScreenUtil {
     public static int getScreenWidth(Context context) {
         WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
         DisplayMetrics outMetrics = new DisplayMetrics();
-        wm.getDefaultDisplay().getMetrics(outMetrics);
+        wm.getDefaultDisplay().getRealMetrics(outMetrics);
         return outMetrics.widthPixels;
     }
 
@@ -49,7 +48,7 @@ public class ScreenUtil {
     public static int getScreenHeight(Context context) {
         WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
         DisplayMetrics outMetrics = new DisplayMetrics();
-        wm.getDefaultDisplay().getMetrics(outMetrics);
+        wm.getDefaultDisplay().getRealMetrics(outMetrics);
         return outMetrics.heightPixels;
     }
 

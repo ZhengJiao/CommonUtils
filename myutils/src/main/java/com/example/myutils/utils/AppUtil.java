@@ -17,7 +17,7 @@ import java.util.Locale;
 import java.util.UUID;
 
 /**
- * Created by zheng on 2018/10/15.
+ * Created by roy on 2018/10/15.
  * 常用APP的工具类，包含版本号、版本名称、安装的应用程序ICON
  */
 
